@@ -1,0 +1,147 @@
+body {
+  background-color: #f0fcfb;
+}
+
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  border-radius: 1em;
+  width: 600px;
+  height: 160px;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+center {
+  padding: 2em;
+}
+
+table {
+  width: 100%;
+  padding: 1em;
+  border: 0.2em solid #21ccbb;
+  border-radius: 1em;
+  border-collapse: collapse;
+  max-width: calc(100% - 2em);
+  margin: 1em auto;
+  overflow: hidden;
+  color: white;
+}
+
+table td {
+  color: #21ccbb;
+  padding: 1em;
+  border-radius: 1em 0 0 0;
+}
+
+table td {
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0 0 0 0;
+}
+
+table td:last-child {
+  font-size: 0.95em;
+  line-height: 1.4;
+  text-align: left;
+}
+
+table th {
+  padding: 1em;
+  background-color: #21ccbb;
+  font-weight: 900;
+  border-radius: 0 0 0 0;
+  margin: 0;
+  padding: 1em;
+}
+
+table tr {
+  border-radius: 1em 1em 0 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: white;
+}
+
+table tr:nth-child(2n+1) {
+  background-color: white;
+}
+
+@media screen and (max-width: 700px) {
+  table, tr, td {
+    display: block;
+  }
+  tr {
+    padding: 1em 0;
+    position: relative;
+    border-radius: 1em;
+  }
+  tr:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 0;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+  td:first-child {
+    background-color: white;
+    border-bottom: 1px solid #c4f5f0;
+    border-radius: 1em 1em 0 0;
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    width: 100%;
+  }
+  td:not(:first-child) {
+    margin: 0;
+    padding: 5px 1em;
+    width: 100%;
+  }
+  td:not(:first-child):before {
+    font-size: .8em;
+    padding-top: 0.3em;
+    position: relative;
+  }
+  td:last-child {
+    padding-bottom: 1rem !important;
+  }
+  tr {
+    background-color: white !important;
+    border: 1px solid #98eee6;
+    border-radius: 1em;
+    -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+}
+
+#map {
+  border-radius: 1em;
+  border: 0.2em solid #2adccb;
+  background-color: white;
+}
+
+#column_chart {
+  padding: 0;
+  border: 0.2em solid #2adccb;
+  border-radius: 1em;
+}
+
+#column_chart * {
+  border-radius: 1em;
+}
+/*# sourceMappingURL=main.css.map */
